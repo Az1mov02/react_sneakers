@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {BrowserRouter as Router} from 'react-router-dom';
 import './index.scss';
 
 import  './index.scss';
 import  'macro-css';
 
 import App from './App';
-import Card from './components/Card';
+ 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>
 );
 
